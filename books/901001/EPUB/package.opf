@@ -16,10 +16,13 @@
     </metadata>
     <manifest>
         <item media-type="application/xhtml+xml" id="nav" href="nav.xhtml" properties="nav"/>
-        <item media-type="application/xhtml+xml" id="item_1" href="901001.xhtml"/>
+        <item media-type="application/xhtml+xml" id="item_1" href="901001.xhtml" properties="mathml"/>
         <item media-type="image/jpeg" id="cover" href="images/cover.jpg"/>
-        <item media-type="image/jpeg" id="logo" href="images/logo.jpg"/>
-        <!-- TODO: images etc. -->
+        <item media-type="image/png" id="logo" href="images/logo.png"/>
+        <item media-type="image/png" id="image_1" href="images/901001-001.png"/>
+        <item media-type="image/png" id="image_2" href="images/901001-002.png"/>
+        <item media-type="image/png" id="image_3" href="images/901001-003.png"/>
+        <item media-type="image/png" id="image_4" href="images/901001-004.png"/>
     </manifest>
     <spine>
         <itemref idref="item_1" id="itemref_1"/>

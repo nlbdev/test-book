@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:epub="http://www.idpf.org/2007/ops"
+      xml:lang="en"
+      lang="en"
+      epub:prefix="z3998: http://www.daisy.org/z3998/2012/vocab/structure/#">
+    <head xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/">
+        <meta charset="UTF-8"/>
+        <title>Test book</title>
+        <meta name="dc:identifier" content="901001"/>
+        <meta name="viewport" content="width=device-width"/>
+        <meta name="dc:language" content="en"/>
+        <meta name="dc:format" content="EPUB3"/>
+        <meta name="dc:creator" content="NLB"/>
+        <meta name="dc:date" content="2019-10-18"/>
+        <meta name="dc:publisher" content="NLB"/>
+        <meta name="dcterms:modified" content="2019-10-18T11:05:35+00:00"/>
+        <link rel="stylesheet" type="text/css" href="css/default.css" media="screen"/>
+    </head>
+    <body>
+        <section epub:type="cover" id="cover">
+            <section class="frontcover" id="frontcover">
+                <figure class="image">
+                    <img alt="image" src="images/cover.jpg" />
+                </figure>
+            </section>
+        </section>
+        <section epub:type="frontmatter titlepage" id="TODO">
+            <div class="page-normal" epub:type="pagebreak" id="TODO" title="TODO"></div>
+            <h1 class="title" epub:type="fulltitle" id="TODO">Test book</h1>
+            <p class="docauthor" epub:type="z3998:author"><strong>NLB</strong></p>
+            <figure class="image">
+                <img alt="image" src="images/logo.png"/>
+            </figure>
+        </section>
+        <section epub:type="frontmatter colophon" id="TODO">
+            <div class="page-normal" epub:type="pagebreak" id="TODO" title="TODO"></div>
+            <p>Copyright © 2019 by</p>
+            <p>NLB</p>
+            <p>All Rights Reserved</p>
+            <hr class="emptyline"/>
+            <p>1. edition, 2019</p>
+            <hr class="emptyline"/>
+            <p>This book is produced by NLB for testing purposes.</p>
+            <hr class="emptyline"/>
+            <p>Questions about this book can be submitted to:</p>
+            <p>Github respository: <a href="https://github.com/nlbdev/test-book/issues">nlbdev/test-book</a></p>
+        </section>
+        <section epub:type="frontmatter preface" id="TODO">
+            <div class="page-normal" epub:type="pagebreak" id="TODO" title="TODO"></div>
+            <h1 id="TODO">Preface</h1>
+            <p>Test books are important for testing. The purpose of this test book is to be able to perform testing.</p>
+            <p>Based on testing, we can get test results. Test results are useful as a basis for making decisions.</p>
+        </section>
+        <section epub:type="frontmatter toc" id="TODO">
+            <div class="page-normal" epub:type="pagebreak" id="TODO" title="TODO"></div>
+            <h1 id="TODO">Table of contents</h1>
+            <!-- TODO: fix toc -->
+            <div class="page-normal" epub:type="pagebreak" id="TODO" title="TODO"></div>
+        </section>
+        <section epub:type="bodymatter chapter">
+            <!-- TODO -->
+            <h1>Math tests</h1>
+            
+            <section>
+                <h2>Image in altimg, asciimath in alttext</h2>
+                
+                <p>In block context:</p>
+                
+                <math xmlns="http://www.w3.org/1998/Math/MathML"
+                      display="block"
+                      altimg="images/901001-001.png"
+                      altimg-width="97px"
+                      altimg-height="22px"
+                      altimg-valign="middle"
+                      alttext="x = y + 2*z">
+                    
+                    <mi>x</mi>
+                    <mo>=</mo>
+                    <mi>y</mi>
+                    <mo>+</mo>
+                    <mn>2</mn>
+                    <mo>&#8290;</mo>
+                    <mi>z</mi>
+                </math>
+                
+                <p>
+                    This math expression: 
+                    
+                    <math xmlns="http://www.w3.org/1998/Math/MathML"
+                          display="inline"
+                          altimg="images/901001-001.png"
+                          altimg-width="97px"
+                          altimg-height="22px"
+                          altimg-valign="middle"
+                          alttext="x = y + 2*z">
+                        
+                        <mi>x</mi>
+                        <mo>=</mo>
+                        <mi>y</mi>
+                        <mo>+</mo>
+                        <mn>2</mn>
+                        <mo>&#8290;</mo>
+                        <mi>z</mi>
+                    </math>
+                    
+                    is in a inline context.
+                </p>
+            </section>
+            
+            <section>
+                <h2>Image in altimg, no alttext</h2>
+                
+                <p>In block context:</p>
+                
+                <math xmlns="http://www.w3.org/1998/Math/MathML"
+                      display="block"
+                      altimg="images/901001-001.png"
+                      altimg-width="97px"
+                      altimg-height="22px"
+                      altimg-valign="middle">
+                    
+                    <mi>x</mi>
+                    <mo>=</mo>
+                    <mi>y</mi>
+                    <mo>+</mo>
+                    <mn>2</mn>
+                    <mo>&#8290;</mo>
+                    <mi>z</mi>
+                </math>
+            </section>
+            
+            <section>
+                <h2>No image, asciimath in alttext</h2>
+                
+                <p>In block context:</p>
+                
+                <math xmlns="http://www.w3.org/1998/Math/MathML"
+                      display="block"
+                      alttext="x = y + 2*z">
+                    
+                    <mi>x</mi>
+                    <mo>=</mo>
+                    <mi>y</mi>
+                    <mo>+</mo>
+                    <mn>2</mn>
+                    <mo>&#8290;</mo>
+                    <mi>z</mi>
+                </math>
+            </section>
+            
+            <section>
+                <h2>No image, no alttext</h2>
+                
+                <p>In block context:</p>
+                
+                <math xmlns="http://www.w3.org/1998/Math/MathML"
+                      display="block">
+                    
+                    <mi>x</mi>
+                    <mo>=</mo>
+                    <mi>y</mi>
+                    <mo>+</mo>
+                    <mn>2</mn>
+                    <mo>&#8290;</mo>
+                    <mi>z</mi>
+                </math>
+            </section>
+            
+            <section>
+                <h2>Image in altimg and annotation, asciimath in alttext and annotation</h2>
+                
+                <math xmlns="http://www.w3.org/1998/Math/MathML"
+                      display="block"
+                      altimg="images/901001-001.png"
+                      altimg-width="97px"
+                      altimg-height="22px"
+                      altimg-valign="middle"
+                      alttext="x = y + 2*z">
+                    
+                    <semantics>
+                        <mrow>
+                            <mi>x</mi>
+                            <mo>=</mo>
+                            <mi>y</mi>
+                            <mo>+</mo>
+                            <mn>2</mn>
+                            <mo>&#8290;</mo>
+                            <mi>z</mi>
+                        </mrow>
+                        
+                        <annotation encoding="image/png" src="images/901001-001.png"/>
+                        
+                        <annotation encoding="application/x-asciimath">x = y + 2*z</annotation>
+                    </semantics>
+                </math>
+            </section>
+            
+            <section>
+                <h2>Image in annotation, asciimath in annotation</h2>
+                
+                <math xmlns="http://www.w3.org/1998/Math/MathML"
+                      display="block">
+                    
+                    <semantics>
+                        <mrow>
+                            <mi>x</mi>
+                            <mo>=</mo>
+                            <mi>y</mi>
+                            <mo>+</mo>
+                            <mn>2</mn>
+                            <mo>&#8290;</mo>
+                            <mi>z</mi>
+                        </mrow>
+                        
+                        <annotation encoding="image/png" src="images/901001-001.png"/>
+                        
+                        <annotation encoding="application/x-asciimath">x = y + 2*z</annotation>
+                    </semantics>
+                </math>
+            </section>
+            
+            <section>
+                <h2>Image with empty alt text, asciimath in separate element</h2>
+                
+                <img alt="" href="images/901001-001.png"/>
+                <p class="sr-only">x = y + 2*z</p>
+            </section>
+            
+            <section>
+                <h2>role="math"</h2>
+                
+                <p>Image without role: <img src="images/901001-002.png" alt="x^2 + y^2 + z^2"></p>
+                <p>Image with role: <img role="math" src="images/901001-002.png" alt="x^2 + y^2 + z^2"></p>
+                <p>Text without role: <span title="x^2 + y^2 + z^2">x<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup></span></p>
+                <p>Text with role: <span role="math" title="x^2 + y^2 + z^2">x<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup></span></p>
+            </section>
+            
+            <section>
+                <h2>MathML with aria-label and no alttext or altimg</h2>
+                
+                <p>Expression with parenthesis and invisible times:</p>
+                <math xmlns="http://www.w3.org/1998/Math/MathML"
+                    display="block">
+                    
+                    <mi aria-label="a ">a</mi>
+                    <mo aria-label="times ">&#8290;</mo>
+                    <mfenced open="(" close=")">
+                        <mrow>
+                            <mn aria-label="1 ">1</mn>
+                            <mo aria-label="plus ">+</mo>
+                            <mi aria-label="b ">b</mi>
+                        </mrow>
+                    </mfenced>
+                </math>
+                
+                <p>Expression with square root:</p>
+                <math xmlns="http://www.w3.org/1998/Math/MathML"
+                    display="block">
+                    
+                    <semantics>
+                        <mrow>
+                            <mi aria-label="z ">z</mi>
+                            <mo aria-label="equals ">=</mo>
+                            <msqrt aria-label="the square root of ">
+                                <mrow>
+                                    <msup>
+                                        <mi aria-label="x ">x</mi>
+                                        <mn aria-label="squared ">2</mn>
+                                    </msup>
+                                    <mo aria-label="plus ">+</mo>
+                                    <msup>
+                                        <mi aria-label="y ">y</mi>
+                                        <mn aria-label="squared ">2</mn>
+                                    </msup>
+                                </mrow>
+                            </msqrt>
+                        </mrow>
+                    </semantics>
+                </math>
+            </section>
+
+            <!--
+                TODO:
+                
+                math:
+                    speech math
+                    advanced math expressions
+                
+                lists
+                tables
+                pullquotes
+                footnotes
+                rearnotes
+                definition lists
+            -->
+        </section>
+        <section>
+            <!-- mathjax-test here -->
+        </section>
+        <section epub:type="bodymatter part" id="TODO">
+            <div class="page-normal" epub:type="pagebreak" id="TODO" title="TODO"></div>
+            <h1 id="TODO">Part 1</h1>
+            <!-- TODO -->
+        </section>
+        <section epub:type="bodymatter part" id="TODO">
+            <div class="page-normal" epub:type="pagebreak" id="TODO" title="TODO"></div>
+            <h1 id="TODO">Part 2</h1>
+            <!-- TODO -->
+        </section>
+        <section epub:type="backmatter index" id="TODO">
+            <div class="page-normal" epub:type="pagebreak" id="TODO" title="TODO"></div>
+            <h1 id="TODO">Index</h1>
+            <ol class="list-style-type-none" style="list-style-type: none;">
+                <!-- TODO -->
+            </ol>
+        </section>
+        <section epub:type="backmatter footnotes" id="TODO">
+            <ol class="list-style-type-none" style="list-style-type: none;">
+                <!-- TODO -->
+            </ol>
+        </section>
+    </body>
+</html>

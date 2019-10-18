@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf"
+         version="3.0"
+         unique-identifier="pub-id">
+    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+        <dc:identifier id="pub-id">901001</dc:identifier>
+        <dc:title>Test book</dc:title>
+        <dc:language>en</dc:language>
+        <dc:format>EPUB3</dc:format>
+        <dc:creator>NLB</dc:creator>
+        <dc:date>2019-10-18</dc:date>
+        <dc:publisher>NLB</dc:publisher>
+        <meta property="dcterms:modified">2019-10-18T11:05:35+00:00</meta>
+        <meta name="cover" content="cover"/>
+        <meta property="cover">cover</meta>
+    </metadata>
+    <manifest>
+        <item media-type="application/xhtml+xml" id="nav" href="nav.xhtml" properties="nav"/>
+        <item media-type="application/xhtml+xml" id="item_1" href="901001.xhtml"/>
+        <item media-type="image/jpeg" id="cover" href="images/cover.jpg"/>
+        <item media-type="image/jpeg" id="logo" href="images/logo.jpg"/>
+        <!-- TODO: images etc. -->
+    </manifest>
+    <spine>
+        <itemref idref="item_1" id="itemref_1"/>
+    </spine>
+</package>

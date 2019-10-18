@@ -223,15 +223,15 @@
             <section>
                 <h2>Image with empty alt text, asciimath in separate element</h2>
                 
-                <img alt="" href="images/901001-001.png"/>
+                <img alt="" src="images/901001-001.png"/>
                 <p class="sr-only">x = y + 2*z</p>
             </section>
             
             <section>
                 <h2>role="math"</h2>
                 
-                <p>Image without role: <img src="images/901001-002.png" alt="x^2 + y^2 + z^2"></p>
-                <p>Image with role: <img role="math" src="images/901001-002.png" alt="x^2 + y^2 + z^2"></p>
+                <p>Image without role: <img src="images/901001-002.png" alt="x^2 + y^2 + z^2"/></p>
+                <p>Image with role: <img role="math" src="images/901001-002.png" alt="x^2 + y^2 + z^2"/></p>
                 <p>Text without role: <span title="x^2 + y^2 + z^2">x<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup></span></p>
                 <p>Text with role: <span role="math" title="x^2 + y^2 + z^2">x<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup></span></p>
             </section>
@@ -278,6 +278,56 @@
                         </mrow>
                     </semantics>
                 </math>
+            </section>
+            
+            <section>
+                <h2>div with role="math" and aria-label, and no alttext or altimg</h2>
+                
+                <p>Expression with parenthesis and invisible times:</p>
+                
+                <div role="math" aria-label="a times paren 1 plus b paren end">
+                    <math xmlns="http://www.w3.org/1998/Math/MathML"
+                          display="block">
+                        
+                        <mi>a</mi>
+                        <mo>&#8290;</mo>
+                        <mfenced open="(" close=")">
+                            <mrow>
+                                <mn>1</mn>
+                                <mo>+</mo>
+                                <mi>b</mi>
+                            </mrow>
+                        </mfenced>
+                    </math>
+                </div>
+                
+                <p>Expression with square root:</p>
+                
+                <div role="math" aria-label="z equals the square root of x squared plus y squared">
+                    <math xmlns="http://www.w3.org/1998/Math/MathML"
+                          display="block">
+                        
+                        <semantics>
+                            <mrow>
+                                <mi>z</mi>
+                                <mo>=</mo>
+                                <msqrt>
+                                    <mrow>
+                                        <msup>
+                                            <mi>x</mi>
+                                            <mn>2</mn>
+                                        </msup>
+                                        <mo>+</mo>
+                                        <msup>
+                                            <mi>y</mi>
+                                            <mn>2</mn>
+                                        </msup>
+                                    </mrow>
+                                </msqrt>
+                            </mrow>
+                        </semantics>
+                    </math>
+                </div>
             </section>
 
             <!--

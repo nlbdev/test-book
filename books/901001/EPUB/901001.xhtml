@@ -764,6 +764,53 @@
                 <p class="sr-only">x equals y plus 2 times z</p>
             </section>
             
+        </section>
+        <section>
+            <h1>MathJax</h1>
+            
+            <script type="text/javascript" src="mathjax/mml-chtml.js" id="MathJax-script" async=""></script>
+            <script type="text/javascript">
+               window.MathJax = {
+                 loader: {
+                   load: ['mml-chtml', 'a11y/semantic-enrich']
+                 },
+                 startup: {
+                   pageReady: () => {
+                     return MathJax.startup.defaultPageReady();
+                   }
+                 },
+                 mml: {
+                   parseAs: 'html',
+                   forceReparse: false,
+                   parseError: function (node) {
+                     this.error(this.adaptor.textContent(node).replace(/\n.*/g, ''));
+                   }
+                 }
+               };
+            </script>
+            
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                <semantics>
+                    <mrow>
+                        <mi>z</mi>
+                        <mo>=</mo>
+                        <msqrt>
+                            <mrow>
+                                <msup>
+                                    <mi>x</mi>
+                                    <mn>2</mn>
+                                </msup>
+                                <mo>+</mo>
+                                <msup>
+                                    <mi>y</mi>
+                                    <mn>2</mn>
+                                </msup>
+                            </mrow>
+                        </msqrt>
+                    </mrow>
+                </semantics>
+            </math>
+            
             <!--
                 TODO:
                 

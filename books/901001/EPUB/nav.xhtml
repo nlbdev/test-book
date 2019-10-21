@@ -1,25 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:epub="http://www.idpf.org/2007/ops"
-      xml:lang="en"
-      lang="en">
-   <head xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/">
-      <meta charset="UTF-8" />
-      <title>Test book</title>
-      <meta name="dc:identifier" content="901001" />
-   </head>
-   <body>
-      <nav epub:type="toc">
-         <h1>Table of contents</h1>
-         <ol>
-            <!-- TODO -->
-         </ol>
-      </nav>
-      <nav epub:type="page-list" hidden="">
-         <h1>List of pages</h1>
-         <ol>
-            <!-- TODO -->
-         </ol>
-      </nav>
-   </body>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops"
+    xml:lang="en" lang="en" epub:prefix="z3998: http://www.daisy.org/z3998/2012/vocab/structure/#">
+    <head xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/">
+        <meta charset="UTF-8"/>
+        <title>Test book</title>
+        <meta name="dc:identifier" content="901001"/>
+        <meta name="viewport" content="width=device-width"/>
+        <meta name="dc:language" content="en"/>
+        <meta name="dc:format" content="EPUB3"/>
+        <meta name="dc:creator" content="NLB"/>
+        <meta name="dc:date" content="2019-10-18"/>
+        <meta name="dc:publisher" content="NLB"/>
+        <meta name="dcterms:modified" content="2019-10-18T11:05:35+00:00"/>
+        <link rel="stylesheet" type="text/css" href="css/default.css" media="screen"/>
+        <style type="text/css" media="screen">
+            .hidden {
+                display: none;
+            }
+            hr.emptyline {
+                border: 0;
+                margin: 2em auto 2em auto;
+            }
+            .page-front:after, .page-normal:after, .page-special:after {
+                content: attr(title);
+            }
+        </style>
+    </head>
+    <body>
+        <nav epub:type="toc">
+            <h1>Table of contents</h1>
+            <ol>
+                <li><a href="901001-001-cover.xhtml#headline_cover">Cover</a></li>
+                <li><a href="901001-002-titlepage.xhtml#headline_1">Test book</a></li>
+                <li><a href="901001-003-colophon.xhtml#headline_colophon">Colophon</a></li>
+                <li><a href="901001-004-toc.xhtml#headline_2">Table of contents</a></li>
+                <li><a href="901001-005-preface.xhtml#headline_3">Preface</a></li>
+                <li><a href="901001-006-chapter.xhtml#headline_4">Basic HTML structures</a>
+                    <ol>
+                        <li><a href="901001-006-chapter.xhtml#headline_5">Lists</a></li>
+                        <li><a href="901001-006-chapter.xhtml#headline_6">Definition lists</a></li>
+                        <li><a href="901001-006-chapter.xhtml#headline_7">Tables</a></li>
+                    </ol>
+                </li>
+                <li><a href="901001-007-part.xhtml#headline_8">Part 1</a>
+                    <ol>
+                        <li><a href="901001-008-chapter.xhtml#headline_9">Math tests with image and asciimath fallback</a>
+                            <ol>
+                                <li><a href="901001-008-chapter.xhtml#headline_10">Image in altimg, asciimath in alttext</a></li>
+                                <li><a href="901001-008-chapter.xhtml#headline_11">Image in altimg, no alttext</a></li>
+                                <li><a href="901001-008-chapter.xhtml#headline_12">No image, asciimath in alttext</a></li>
+                                <li><a href="901001-008-chapter.xhtml#headline_13">No image, no alttext</a></li>
+                                <li><a href="901001-008-chapter.xhtml#headline_14">Image in altimg and annotation, asciimath in alttext and annotation</a></li>
+                                <li><a href="901001-008-chapter.xhtml#headline_15">Image in annotation, asciimath in annotation</a></li>
+                                <li><a href="901001-008-chapter.xhtml#headline_16">MathML with SVG annotation</a></li>
+                                <li><a href="901001-008-chapter.xhtml#headline_17">SVG hidden from screen readers, &lt;p&gt; only viewable from screen readers</a></li>
+                                <li><a href="901001-008-chapter.xhtml#headline_18">Image with empty alt text, asciimath in separate element</a></li>
+                                <li><a href="901001-008-chapter.xhtml#headline_19">role="math"</a></li>
+                            </ol>
+                        </li>
+                        <li><a href="901001-009-chapter.xhtml#headline_20">Math tests with spoken math for use by speech synthesizers</a>
+                            <ol>
+                                <li><a href="901001-009-chapter.xhtml#headline_21">MathML with aria-label and no alttext or altimg</a></li>
+                                <li><a href="901001-009-chapter.xhtml#headline_22">div with role="math" and aria-label, and no alttext or altimg</a></li>
+                                <li><a href="901001-009-chapter.xhtml#headline_23">Image in altimg, spoken math in alttext</a></li>
+                                <li><a href="901001-009-chapter.xhtml#headline_24">MathML with SVG annotation with spoken math in aria-label</a></li>
+                                <li><a href="901001-009-chapter.xhtml#headline_25">Pure SVG with spoken math in aria-label</a></li>
+                                <li><a href="901001-009-chapter.xhtml#headline_26">Image with empty alt text, asciimath in separate element</a></li>
+                            </ol>
+                        </li>
+                        <li><a href="901001-010-chapter.xhtml#headline_27">Focusable screen reader text</a>
+                            <ol>
+                                <li><a href="901001-010-chapter.xhtml#headline_28">Formula with image</a></li>
+                                <li><a href="901001-010-chapter.xhtml#headline_29">Formula with MathML</a></li>
+                            </ol>
+                        </li>
+                    </ol>
+                </li>
+                <li><a href="901001-011-part.xhtml#headline_30">Part 2</a>
+                    <ol>
+                        <li><a href="901001-012-chapter.xhtml#headline_31">Visibility and fallback</a>
+                            <ol>
+                                <li><a href="901001-012-chapter.xhtml#headline_32">display: none;</a></li>
+                                <li><a href="901001-012-chapter.xhtml#headline_33">epub:switch</a></li>
+                            </ol>
+                        </li>
+                        <li><a href="901001-013-chapter.xhtml#headline_34">Page number rendering</a></li>
+                        <li><a href="901001-014-chapter.xhtml#headline_35">Chapter with note references</a>
+                            <ol>
+                                <li><a href="901001-015-footnotes.xhtml#headline_36">Footnotes</a></li>
+                            </ol>
+                        </li>
+                    </ol>
+                </li>
+                <li><a href="901001-016-conclusion.xhtml#headline_37">Conclusion</a></li>
+                <li><a href="901001-017-afterword.xhtml#headline_38">Afterword</a></li>
+            </ol>
+        </nav>
+        <nav epub:type="page-list" hidden="">
+            <h1>List of pages</h1>
+            <ol>
+                <li><a href="901001-002-titlepage.xhtml#page_i">i</a></li>
+                <li><a href="901001-003-colophon.xhtml#page_ii">ii</a></li>
+                <li><a href="901001-004-toc.xhtml#page_iii">iii</a></li>
+                <li><a href="901001-004-toc.xhtml#page_iv">iv</a></li>
+                <li><a href="901001-005-preface.xhtml#page_v">v</a></li>
+                <li><a href="901001-006-chapter.xhtml#page_1">1</a></li>
+                <li><a href="901001-007-part.xhtml#page_2">2</a></li>
+                <li><a href="901001-011-part.xhtml#page_3">3</a></li>
+                <li><a href="901001-013-chapter.xhtml#page_5">5</a></li>
+                <li><a href="901001-013-chapter.xhtml#page_6">6</a></li>
+                <li><a href="901001-013-chapter.xhtml#page_4">4</a></li>
+                <li><a href="901001-016-conclusion.xhtml#page_7">7</a></li>
+                <li><a href="901001-017-afterword.xhtml#page_a">a</a></li>
+                <li><a href="901001-017-afterword.xhtml#page_b">b</a></li>
+            </ol>
+        </nav>
+    </body>
 </html>

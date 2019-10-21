@@ -10,33 +10,33 @@
         <dc:publisher>NLB</dc:publisher>
         <meta property="dcterms:modified">2019-10-18T11:05:35Z</meta>
         <meta name="cover" content="cover"/>
-        <meta property="cover">cover</meta>
     </metadata>
     <manifest>
         <item media-type="application/xhtml+xml" id="nav" href="nav.xhtml" properties="nav"/>
-        <item media-type="application/xhtml+xml" hre="901001-001-cover.xhtml" id="item_001"/>
-        <item media-type="application/xhtml+xml" hre="901001-002-titlepage.xhtml" id="item_002"/>
-        <item media-type="application/xhtml+xml" hre="901001-003-colophon.xhtml" id="item_003"/>
-        <item media-type="application/xhtml+xml" hre="901001-004-toc.xhtml" id="item_004"/>
-        <item media-type="application/xhtml+xml" hre="901001-005-preface.xhtml" id="item_005"/>
-        <item media-type="application/xhtml+xml" hre="901001-006-chapter.xhtml" id="item_006"/>
-        <item media-type="application/xhtml+xml" hre="901001-007-part.xhtml" id="item_007"/>
-        <item media-type="application/xhtml+xml" hre="901001-008-chapter.xhtml" id="item_008" properties="mathml"/>
-        <item media-type="application/xhtml+xml" hre="901001-009-chapter.xhtml" id="item_009" properties="mathml"/>
-        <item media-type="application/xhtml+xml" hre="901001-010-chapter.xhtml" id="item_010" properties="mathml"/>
-        <item media-type="application/xhtml+xml" hre="901001-011-part.xhtml" id="item_011"/>
-        <item media-type="application/xhtml+xml" hre="901001-012-chapter.xhtml" id="item_012"/>
-        <item media-type="application/xhtml+xml" hre="901001-013-chapter.xhtml" id="item_013"/>
-        <item media-type="application/xhtml+xml" hre="901001-014-chapter.xhtml" id="item_014"/>
-        <item media-type="application/xhtml+xml" hre="901001-015-footnotes.xhtml" id="item_015"/>
-        <item media-type="application/xhtml+xml" hre="901001-016-conclusion.xhtml" id="item_016"/>
-        <item media-type="application/xhtml+xml" hre="901001-017-afterword.xhtml" id="item_017"/>
-        <item media-type="image/jpeg" id="cover" href="images/cover.jpg"/>
+        <item media-type="application/xhtml+xml" href="901001-001-cover.xhtml" id="item_001"/>
+        <item media-type="application/xhtml+xml" href="901001-002-titlepage.xhtml" id="item_002"/>
+        <item media-type="application/xhtml+xml" href="901001-003-colophon.xhtml" id="item_003"/>
+        <item media-type="application/xhtml+xml" href="901001-004-toc.xhtml" id="item_004"/>
+        <item media-type="application/xhtml+xml" href="901001-005-preface.xhtml" id="item_005"/>
+        <item media-type="application/xhtml+xml" href="901001-006-chapter.xhtml" id="item_006"/>
+        <item media-type="application/xhtml+xml" href="901001-007-part.xhtml" id="item_007"/>
+        <item media-type="application/xhtml+xml" href="901001-008-chapter.xhtml" id="item_008" properties="mathml svg"/>
+        <item media-type="application/xhtml+xml" href="901001-009-chapter.xhtml" id="item_009" properties="mathml svg"/>
+        <item media-type="application/xhtml+xml" href="901001-010-chapter.xhtml" id="item_010" properties="mathml"/>
+        <item media-type="application/xhtml+xml" href="901001-011-part.xhtml" id="item_011"/>
+        <item media-type="application/xhtml+xml" href="901001-012-chapter.xhtml" id="item_012" properties="switch"/>
+        <item media-type="application/xhtml+xml" href="901001-013-chapter.xhtml" id="item_013"/>
+        <item media-type="application/xhtml+xml" href="901001-014-chapter.xhtml" id="item_014"/>
+        <item media-type="application/xhtml+xml" href="901001-015-footnotes.xhtml" id="item_015"/>
+        <item media-type="application/xhtml+xml" href="901001-016-conclusion.xhtml" id="item_016"/>
+        <item media-type="application/xhtml+xml" href="901001-017-afterword.xhtml" id="item_017"/>
+        <item media-type="image/jpeg" id="cover" href="images/cover.jpg" properties="cover-image"/>
         <item media-type="image/png" id="logo" href="images/logo.png"/>
         <item media-type="image/png" id="image_1" href="images/901001-001.png"/>
         <item media-type="image/png" id="image_2" href="images/901001-002.png"/>
         <item media-type="image/png" id="image_3" href="images/901001-003.png"/>
         <item media-type="image/png" id="image_4" href="images/901001-004.png"/>
+        <item media-type="text/css" id="stylesheet" href="css/default.css"/>
     </manifest>
     <spine>
         <itemref idref="item_001" id="itemref_001" linear="no"/>

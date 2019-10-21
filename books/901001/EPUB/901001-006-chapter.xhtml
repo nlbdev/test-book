@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops"
+      xml:lang="en" lang="en" epub:prefix="z3998: http://www.daisy.org/z3998/2012/vocab/structure/#">
+    <head xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/">
+        <meta charset="UTF-8"/>
+        <title>Test book</title>
+        <meta name="dc:identifier" content="901001"/>
+        <meta name="viewport" content="width=device-width"/>
+        <meta name="dc:language" content="en"/>
+        <meta name="dc:format" content="EPUB3"/>
+        <meta name="dc:creator" content="NLB"/>
+        <meta name="dc:date" content="2019-10-18"/>
+        <meta name="dc:publisher" content="NLB"/>
+        <meta name="dcterms:modified" content="2019-10-18T11:05:35+00:00"/>
+        <link rel="stylesheet" type="text/css" href="css/default.css" media="screen"/>
+        <style type="text/css" media="screen">
+            .hidden {
+                display: none;
+            }
+            hr.emptyline {
+                border: 0;
+                margin: 2em auto 2em auto;
+            }
+            .page-front:after, .page-normal:after, .page-special:after {
+                content: attr(title);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="page_1" class="page-normal" epub:type="pagebreak" title="1"></div>
+        <h1 id="headline_4" epub:type="bodymatter chapter">Basic HTML structures</h1>
+        
+        <section id="section_6">
+            <h2 id="headline_5">Lists</h2>
+            
+            <ol>
+                <li>First item in ordered list</li>
+                <li>Second item in ordered list</li>
+                <li>Third item in ordered list</li>
+                <li>
+                    <ol>
+                        <li>First item in sublist</li>
+                        <li>Second item in sublist</li>
+                    </ol>
+                </li>
+            </ol>
+            
+            <ul>
+                <li>First item in unordered list</li>
+                <li>Second item in unordered list</li>
+                <li>Third item in unordered list</li>
+                <li>
+                    <ul>
+                        <li>First item in sublist</li>
+                        <li>Second item in sublist</li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <ul class="list-unstyled">
+                <li>• First item in preformatted list</li>
+                <li>• Second item in preformatted list</li>
+                <li>• Third item in preformatted list</li>
+                <li>
+                    <ul class="list-unstyled">
+                        <li>• First item in sublist</li>
+                        <li>• Second item in sublist</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section id="section_7">
+            <h2 id="headline_6">Definition lists</h2>
+            
+            <dl>
+                <dt>First definition term</dt>
+                <dd>Value for first term</dd>
+                <dt>Second definition term (with no values)</dt>
+                <dt>Third definition term</dt>
+                <dd>First value for third term</dd>
+                <dd>Second value for third term</dd>
+            </dl>
+        </section>
+        <section id="section_8">
+            <h2 id="headline_7">Tables</h2>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th rowspan="2">Month</th>
+                        <th colspan="2">Physical</th>
+                        <th colspan="2">Digital</th>
+                    </tr>
+                    <tr>
+                        <th>Paper braille</th>
+                        <th>CD</th>
+                        <th>EPUB</th>
+                        <th>Streaming</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>June</th>
+                        <td>10,000</td>
+                        <td>12,000</td>
+                        <td>14,000</td>
+                        <td>16,000</td>
+                    </tr>
+                    <tr>
+                        <th>July</th>
+                        <td>18,000</td>
+                        <td>19,000</td>
+                        <td>20,000</td>
+                        <td>21,000</td>
+                    </tr>
+                    <tr>
+                        <th>August</th>
+                        <td>22,000</td>
+                        <td>23,000</td>
+                        <td>24,000</td>
+                        <td>25,000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </body>
+</html>

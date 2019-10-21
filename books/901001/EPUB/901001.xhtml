@@ -16,6 +16,33 @@
         <meta name="dc:publisher" content="NLB"/>
         <meta name="dcterms:modified" content="2019-10-18T11:05:35+00:00"/>
         <link rel="stylesheet" type="text/css" href="css/default.css" media="screen"/>
+        <style type="text/css">
+                // <![CDATA[
+                /* see: https://gomakethings.com/hidden-content-for-better-a11y/#hiding-the-link */
+                 .sr-only {
+                 	border: 0;
+                 	clip: rect(0 0 0 0);
+                 	height: 1px;
+                 	margin: -1px;
+                 	overflow: hidden;
+                 	padding: 0;
+                 	position: absolute;
+                 	white-space: nowrap;
+                 	width: 1px;
+                 }
+                 
+                 .sr-only-focusable:active,
+                 .sr-only-focusable:focus {
+                 	clip: auto;
+                 	height: auto;
+                 	margin: 0;
+                 	overflow: visible;
+                 	position: static;
+                 	white-space: normal;
+                 	width: auto;
+                 }
+                // ]]>
+            </style>
     </head>
     <body>
         <section epub:type="cover" id="cover">
@@ -488,9 +515,7 @@
                 <p>Expression with parenthesis and invisible times:</p>
                 
                 <div role="math" aria-label="a times paren 1 plus b paren end">
-                    <math xmlns="http://www.w3.org/1998/Math/MathML"
-                        display="block">
-                        
+                    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
                         <mi>a</mi>
                         <mo>&#8290;</mo>
                         <mfenced open="(" close=")">
@@ -506,9 +531,7 @@
                 <p>Expression with square root:</p>
                 
                 <div role="math" aria-label="z equals the square root of x squared plus y squared">
-                    <math xmlns="http://www.w3.org/1998/Math/MathML"
-                        display="block">
-                        
+                    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
                         <semantics>
                             <mrow>
                                 <mi>z</mi>
@@ -763,7 +786,43 @@
                 <img alt="" src="images/901001-001.png"/>
                 <p class="sr-only">x equals y plus 2 times z</p>
             </section>
+        </section>
+        <section>
+            <h1>Focusable screen reader text</h1>
             
+            <section>
+                <h2>Formula with image</h2>
+                <a class="sr-only sr-only-focusable" href="#sr-link-1" id="sr-link-1">x equals y plus 2 times z</a>
+                <figure class="image">
+                    <img alt="Formula with SVG" src="images/901001-001.png"/>
+                </figure>
+            </section>
+            
+            <section>
+                <h2>Formula with MathML</h2>
+                <a class="sr-only sr-only-focusable" href="#sr-link-2" id="sr-link-2">z equals the square root of x squared plus y squared</a>
+                <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                    <semantics>
+                        <mrow>
+                            <mi>z</mi>
+                            <mo>=</mo>
+                            <msqrt>
+                                <mrow>
+                                    <msup>
+                                        <mi>x</mi>
+                                        <mn>2</mn>
+                                    </msup>
+                                    <mo>+</mo>
+                                    <msup>
+                                        <mi>y</mi>
+                                        <mn>2</mn>
+                                    </msup>
+                                </mrow>
+                            </msqrt>
+                        </mrow>
+                    </semantics>
+                </math>
+            </section>
         </section>
         <section>
             <h1>MathJax</h1>
